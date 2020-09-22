@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(aqua,pink); -fx-border-color: blue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meetingscheduler.SendwindowController">
+   <children>
+      <HBox alignment="CENTER" layoutX="93.0" layoutY="21.0" AnchorPane.bottomAnchor="529.0" AnchorPane.leftAnchor="93.0" AnchorPane.rightAnchor="157.0" AnchorPane.topAnchor="21.0">
+         <children>
+            <Button fx:id="sendrqst" mnemonicParsing="false" onAction="#sendrqstclicked" prefHeight="50.0" prefWidth="150.0" text="Send Request" textFill="#d95959">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#clearclicked" prefHeight="50.0" prefWidth="150.0" text="Clear" textFill="#d73030">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="back" layoutX="234.0" layoutY="10.0" mnemonicParsing="false" onAction="#backclicked" prefHeight="50.0" prefWidth="150.0" text="Back" textFill="#d73030">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="94.0" layoutY="94.0" prefHeight="208.0" prefWidth="318.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="94.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="75.0" text="Details" textFill="#451ec6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="meetingname" prefHeight="59.0" prefWidth="318.0" promptText="Meeting Name">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="location" prefHeight="48.0" prefWidth="318.0" promptText="Location">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="personname" prefHeight="42.0" prefWidth="318.0" promptText="Person Name">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="95.0" layoutY="329.0" prefHeight="249.0" prefWidth="569.0" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="329.0">
+         <children>
+            <HBox layoutX="101.0" layoutY="321.0" prefHeight="75.0" prefWidth="590.0" AnchorPane.bottomAnchor="204.0" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="99.0" AnchorPane.topAnchor="321.0">
+               <children>
+                  <DatePicker fx:id="date" editable="false" prefHeight="50.0" prefWidth="240.0" promptText="Meeting Date">
+                     <effect>
+                        <InnerShadow />
+                     </effect></DatePicker>
+                  <ComboBox fx:id="start" prefHeight="50.0" prefWidth="150.0" promptText="Start" visibleRowCount="26">
+                     <HBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </HBox.margin>
+<!--                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>-->
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ComboBox>
+                  <CheckBox fx:id="allday" mnemonicParsing="false" onAction="#alldayclicked" prefHeight="35.0" prefWidth="84.0" text="All Day" textFill="#de3828">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="15.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="590.0">
+               <children>
+                  <ComboBox fx:id="end" prefHeight="50.0" prefWidth="150.0" promptText="End" visibleRowCount="26">
+                     <HBox.margin>
+                        <Insets left="260.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <TextArea fx:id="description" minHeight="-Infinity" minWidth="-Infinity" prefHeight="87.0" prefWidth="282.0" promptText="Meeting Description">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextArea>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

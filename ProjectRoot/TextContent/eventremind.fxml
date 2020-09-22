@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(aqua,pink); -fx-border-color: blue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meetingscheduler.EventremindController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="93.0" layoutY="21.0" AnchorPane.bottomAnchor="529.0" AnchorPane.leftAnchor="93.0" AnchorPane.rightAnchor="157.0" AnchorPane.topAnchor="21.0">
+         <children>
+            <Button fx:id="back" layoutX="234.0" layoutY="10.0" mnemonicParsing="false" onAction="#backclicked" prefHeight="50.0" prefWidth="150.0" text="Back" textFill="#d73030">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="reminder" prefHeight="52.0" prefWidth="177.0" style="-fx-background-color: linear-gradient(white,silver);" visibleRowCount="20">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ComboBox>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="94.0" layoutY="100.0" prefHeight="494.0" prefWidth="535.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <HBox prefHeight="66.0" prefWidth="535.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="139.0" text="Meeting Name  :" textFill="#4d06f5">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" editable="false" prefHeight="49.0" prefWidth="287.0">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="66.0" prefWidth="535.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="139.0" text="Person Name :" textFill="#0e3df8">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="personame" editable="false" prefHeight="49.0" prefWidth="287.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="76.0" prefHeight="66.0" prefWidth="535.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="139.0" text="Location :" textFill="#0d3bd0">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="location" editable="false" prefHeight="49.0" prefWidth="287.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="142.0" prefHeight="66.0" prefWidth="535.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="139.0" text="Date :" textFill="#1040e1">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="date" editable="false" prefHeight="49.0" prefWidth="287.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="208.0" prefHeight="66.0" prefWidth="535.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="139.0" text="Start Time :" textFill="#0e2dda">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="starttime" editable="false" prefHeight="49.0" prefWidth="287.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="274.0" prefHeight="66.0" prefWidth="535.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="139.0" text="End Time :" textFill="#1045f5">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="endtime" editable="false" prefHeight="49.0" prefWidth="287.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="340.0" prefHeight="99.0" prefWidth="535.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="139.0" text="Meeting Description :" textFill="#092bee">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextArea fx:id="description" editable="false" prefHeight="89.0" prefWidth="335.0" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </TextArea>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

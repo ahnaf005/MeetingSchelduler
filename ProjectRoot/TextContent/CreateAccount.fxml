@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="465.0" style="-fx-background-color: linear-gradient(wheat,white);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meetingscheduler.CreateAccountController">
+   <children>
+      <VBox layoutX="66.0" layoutY="83.0" prefHeight="296.0" prefWidth="321.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="83.0">
+         <children>
+            <HBox prefHeight="69.0" prefWidth="278.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" prefHeight="37.0" prefWidth="92.0" text="UserName :" textFill="#263ef2" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Britannic Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="user" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="69.0" prefWidth="278.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" prefHeight="37.0" prefWidth="92.0" text="PassWord :" textFill="#2a4cd7" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Britannic Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="password" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox prefHeight="69.0" prefWidth="278.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="label2" alignment="CENTER" prefHeight="39.0" prefWidth="214.0" text="UserName Taken.Try Again" textFill="#ae0906" visible="false" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="62.0" prefWidth="65.0" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#createacnt" prefHeight="39.0" prefWidth="139.0" style="-fx-background-color: linear-gradient(blue,aqua);" text="Create Account" textFill="#0e1017" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets bottom="50.0" top="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="label" alignment="CENTER" prefHeight="34.0" prefWidth="236.0" text="Account Creation Succesful" textFill="#00090a" visible="false" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="80.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#anotherwindow" prefHeight="39.0" prefWidth="192.0" text="Log Into Your Account" underline="true" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="160.0" top="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

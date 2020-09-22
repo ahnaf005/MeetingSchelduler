@@ -1,0 +1,166 @@
+.button1{
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: linear-gradient(aqua,blue);
+    -fx-font-size:18pt;
+    -fx-font-color:blue;
+    -fx-font-family:"Times New Roman";
+	
+}
+.label1{
+    -fx-border-color: rgb(49, 89, 23);
+    -fx-background-color: linear-gradient(aqua,white);    
+}
+.label2{
+    -fx-border-color: rgb(49, 89, 23);
+    -fx-background-color: blue;
+    -fx-text-fill: rgb(255,255,255);
+    -fx-font-family:"Times New Roman";
+    -fx-font-size:14pt;
+    -fx-font-style: italic;    
+}
+.button2{
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius:4;	
+    -fx-background-color:linear-gradient(blue,black) ;
+    -fx-font-size:14pt;
+    -fx-font-color:blue;
+    -fx-font-family:"Times New Roman";	
+}
+.root{
+    -fx-background-image:url("/BinaryContent/back.png");
+}
+.button3{
+    -fx-text-fill: white;
+    -fx-border-color: yellow;
+    -fx-border-width:4px;	
+    -fx-background-color:linear-gradient(blue,black) ;
+    -fx-font-size:14pt;
+    -fx-font-color:blue;
+    -fx-font-family:"Times New Roman";	
+}
+.digiclock{
+    -fx-text-fill: yellow;
+    -fx-border-color: yellow;	
+    -fx-background-color:linear-gradient(red,black) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-border-radius: 5;	
+}
+.options{
+    -fx-text-fill: linear-gradient(black,red);
+    -fx-border-color: black;
+    -fx-border-width:1px;	
+    -fx-background-color:linear-gradient(blue,white) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-font-style:italic;	
+}
+.eventhas{
+    -fx-text-fill: white;
+    -fx-border-color: yellow;
+    -fx-border-width:4px;	
+    -fx-background-color:linear-gradient(orange,red) ;
+    -fx-font-size:14pt;
+    -fx-font-color:blue;
+    -fx-font-family:"Times New Roman";
+}
+.user{
+    -fx-background-color:linear-gradient(black,blue);
+}
+.scroll-bar:horizontal .thumb {
+-fx-background-color:
+    red,
+    linear-gradient(to bottom, derive(red,95%), derive(red,10%)),
+    linear-gradient(to bottom, derive(red,38%), derive(red,-16%));
+-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 0.5em; /* makes sure this remains circular */
+}
+.scroll-bar:vertical .thumb {
+-fx-background-color:
+    red,
+    linear-gradient(to right, derive(red,95%), derive(red,10%)),
+    linear-gradient(to right, derive(red,38%), derive(red,-16%));
+-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 0.5em; /* makes sure this remains circular */
+}
+.details{
+    -fx-text-fill: linear-gradient(black,blue);
+    -fx-border-color: black;
+    -fx-border-radius:5;
+    -fx-border-width:1px;	
+    -fx-background-color:linear-gradient(silver,aqua) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-font-style:italic;
+}
+.wait{
+    -fx-text-fill: linear-gradient(black,blue);
+    -fx-border-color: blue;
+    -fx-border-radius:5;
+    -fx-border-width:1px;	
+    -fx-background-color:linear-gradient(yellow,pink) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-font-style:italic;
+}
+.cancel{
+    -fx-text-fill: linear-gradient(white,pink);
+    -fx-border-color: blue;
+    -fx-border-radius:5;
+    -fx-border-width:1px;	
+    -fx-background-color:linear-gradient(red,orange) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-font-style:italic;
+}
+.accept{
+    -fx-text-fill: linear-gradient(white,pink);
+    -fx-border-color: blue;
+    -fx-border-radius:5;
+    -fx-border-width:1px;	
+    -fx-background-color:linear-gradient(green,aqua) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-font-style:italic;
+}
+.Invalid{
+    -fx-text-fill: linear-gradient(red,black);
+    -fx-border-color: blue;
+    -fx-border-radius:5;
+    -fx-border-width:1px;	
+    -fx-background-color:linear-gradient(yellow,white) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-font-style:italic;
+}
+.meeting{
+    -fx-text-fill: linear-gradient(white,pink);
+    -fx-border-color: blue;
+    -fx-border-radius:5;
+    -fx-border-width:1px;	
+    -fx-background-color:linear-gradient(crimson,steelblue) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-font-style:italic;
+}
+.request{
+    -fx-text-fill: linear-gradient(red,pink);
+    -fx-border-color: blue;
+    -fx-border-radius:5;
+    -fx-border-width:1px;	
+    -fx-background-color:linear-gradient(wheat,aqua) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-font-style:italic;
+}
+.cancelled{
+    -fx-text-fill: linear-gradient(white,wheat);
+    -fx-border-color: blue;
+    -fx-border-radius:5;
+    -fx-border-width:1px;	
+    -fx-background-color:linear-gradient(crimson,red) ;
+    -fx-font-size:14pt;
+    -fx-font-family:"Times New Roman";
+    -fx-font-style:italic;
+}
